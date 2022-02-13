@@ -1,0 +1,2 @@
+Mailtrap
+is successfully ready;

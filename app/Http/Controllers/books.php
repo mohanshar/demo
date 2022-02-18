@@ -35,7 +35,6 @@ class books extends Controller
             'book_Price' => $request->get('price'),
             'book_Publications' => $request->get('publications'),
             'user_id' => Auth::check() ? Auth::user()->id : '',
-            'phone_number' => $request->get('phone'),
             'cover' => $image_url ?? '',
         ];
 
@@ -68,7 +67,6 @@ class books extends Controller
             'book_AuthorName' => $request->get('author'),
             'book_Price' => $request->get('price'),
             'book_Publications' => $request->get('publications'),
-            'phone_number' => $request->get('phone'),
             'cover' => $image_url ?? '',
 
         ];

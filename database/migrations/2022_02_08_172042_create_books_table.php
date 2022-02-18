@@ -20,7 +20,6 @@ class CreateBooksTable extends Migration
             $table->integer('book_Price')->nullable();
             $table->string('book_Publications')->nullable();
             $table->tinyInteger('user_id')->nullable();
-            $table->string('phone_number')->nullable();
             $table->timestamps();
         });
     }

@@ -64,4 +64,9 @@ Route::get('/sendmail','mailController@sms');
 // make call
 Route::get('/makecall','makeCall@makecall');
 
-//
+// Admin Login routes
+
+Route::get('/admin/login','adminLoginController@adminLogin')->name('admin.login');
+Route::post('/admin/login/submit','adminLoginController@submit')->name('admin.login.submit');
+
+Route::get('/logout','adminLoginController@logout')->name('admin.logout');
